@@ -7,11 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BB6AE9041E2942EE003887E3 /* ADProgressViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB6AE9031E2942EE003887E3 /* ADProgressViewDelegate.swift */; };
 		BBBDEFDA1E28F70500E0F0EB /* ADProgressView.h in Headers */ = {isa = PBXBuildFile; fileRef = BBBDEFD81E28F70500E0F0EB /* ADProgressView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BBBDEFE11E28F72700E0F0EB /* ADProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBBDEFE01E28F72700E0F0EB /* ADProgressView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BB6AE9031E2942EE003887E3 /* ADProgressViewDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ADProgressViewDelegate.swift; sourceTree = "<group>"; };
 		BBBDEFD51E28F70500E0F0EB /* ADProgressView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ADProgressView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BBBDEFD81E28F70500E0F0EB /* ADProgressView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ADProgressView.h; sourceTree = "<group>"; };
 		BBBDEFD91E28F70500E0F0EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,6 +51,7 @@
 			isa = PBXGroup;
 			children = (
 				BBBDEFE01E28F72700E0F0EB /* ADProgressView.swift */,
+				BB6AE9031E2942EE003887E3 /* ADProgressViewDelegate.swift */,
 				BBBDEFD81E28F70500E0F0EB /* ADProgressView.h */,
 				BBBDEFD91E28F70500E0F0EB /* Info.plist */,
 			);
@@ -137,6 +140,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BBBDEFE11E28F72700E0F0EB /* ADProgressView.swift in Sources */,
+				BB6AE9041E2942EE003887E3 /* ADProgressViewDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -302,6 +306,7 @@
 				BBBDEFDF1E28F70500E0F0EB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

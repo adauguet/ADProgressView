@@ -87,7 +87,7 @@ Pod::Spec.new do |s|
   #
 
   s.source_files  = "ADProgressView", "ADProgressView/**/*.{h,m,swift}"
-  # s.exclude_files = "Classes/Exclude"
+  s.exclude_files = "Example"
 
   # s.public_header_files = "Classes/**/*.h"
 

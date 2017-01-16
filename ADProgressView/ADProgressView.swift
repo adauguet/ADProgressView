@@ -11,6 +11,8 @@ import UIKit
 
 public class ADProgressView: UIProgressView {
     
+    @IBOutlet open var delegate: ADProgressViewDelegate?
+    
     private var time: Float = 0.0
     private var timer: Timer?
     
@@ -22,7 +24,7 @@ public class ADProgressView: UIProgressView {
     /// Starts the progress view.
     public func start() {
         timer?.invalidate()
-        if time >= duration { time = 0 }
+        if time >= duration { time = 0.0 }
         timer = Timer.scheduledTimer(withTimeInterval: TimeInterval(timeInterval), repeats: true) { _ in
             self.increment()
         }
@@ -47,6 +49,7 @@ public class ADProgressView: UIProgressView {
         setProgress(time / duration, animated: false)
         if time >= duration {
             timer?.invalidate()
+            delegate?.progressViewDidFinish()
         }
     }
 }

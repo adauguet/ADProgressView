@@ -9,7 +9,7 @@
 import UIKit
 import ADProgressView
 
-class ViewController: UIViewController {
+@objc class ViewController: UIViewController, ADProgressViewDelegate {
     
     @IBOutlet weak var progressView: ADProgressView!
     
@@ -27,5 +27,12 @@ class ViewController: UIViewController {
     
     @IBAction func reset(_ sender: Any) {
         progressView.reset()
+    }
+}
+
+extension ViewController {
+    
+    func progressViewDidFinish() {
+        print(#function)
     }
 }
