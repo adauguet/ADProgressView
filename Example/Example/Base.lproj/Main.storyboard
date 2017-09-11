@@ -29,6 +29,11 @@
                                         <constraints>
                                             <constraint firstAttribute="height" constant="10" id="70K-JK-SLH"/>
                                         </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="duration">
+                                                <real key="value" value="3"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
                                         <connections>
                                             <outlet property="delegate" destination="BYZ-38-t0r" id="rHj-m2-oLl"/>
                                         </connections>

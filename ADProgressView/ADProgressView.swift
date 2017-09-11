@@ -24,10 +24,12 @@ public class ADProgressView: UIProgressView {
     /// Starts the progress view.
     public func start() {
         timer?.invalidate()
-        if time >= duration { time = 0.0 }
-        timer = Timer.scheduledTimer(withTimeInterval: TimeInterval(timeInterval), repeats: true) { _ in
-            self.increment()
-        }
+        if time >= duration { time = 0.0 }        
+        timer = Timer.scheduledTimer(timeInterval: TimeInterval(timeInterval), target: self, selector: #selector(increment), userInfo: nil, repeats: true)
+    }
+    
+    @objc func foo() {
+        
     }
     
     /// Pauses the progress view.
@@ -44,7 +46,7 @@ public class ADProgressView: UIProgressView {
     
     // MARK: - Private methods
     
-    private func increment() {
+    @objc private func increment() {
         time += timeInterval
         setProgress(time / duration, animated: false)
         if time >= duration {
